@@ -1446,6 +1446,7 @@
 				3FBD8BA0270EF6E400361803 /* Frameworks */,
 				3FBD8BA1270EF6E400361803 /* Resources */,
 				D209CFC8D91411E018C7B607 /* [CP] Embed Pods Frameworks */,
+				8CC8D74248E4E33D1F48EFCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1561,6 +1562,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8CC8D74248E4E33D1F48EFCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialHunter/Pods-SocialHunter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialHunter/Pods-SocialHunter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialHunter/Pods-SocialHunter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D209CFC8D91411E018C7B607 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

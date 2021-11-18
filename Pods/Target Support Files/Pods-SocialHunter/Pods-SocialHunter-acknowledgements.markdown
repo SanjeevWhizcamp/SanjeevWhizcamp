@@ -258,6 +258,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+## GoogleMaps
+
+Copyright 2021 Google
+
 ## GrowingTextView
 
 Copyright (c) 2016 Kenneth Tsang <kenneth.tsang@me.com>
