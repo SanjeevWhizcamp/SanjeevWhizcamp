@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli.ttf">
+            <string>Muli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="6Dh-7q-41t" customClass="SenderCell" customModule="SocialHunter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Dh-7q-41t" id="y1j-T7-iIr">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="janko-ferlic-G-jo31ESuRE-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="zi0-ge-ei8" customClass="BorderImageView" customModule="SocialHunter" customModuleProvider="target">
+                        <rect key="frame" x="20" y="5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="IRU-DM-2sk"/>
+                            <constraint firstAttribute="height" constant="35" id="gCC-NJ-1aX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seen 6:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byj-lS-BGT">
+                        <rect key="frame" x="63" y="92" width="86" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nt2-am-iPj">
+                        <rect key="frame" x="63" y="5" width="321" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ0-nD-n9b">
+                                <rect key="frame" x="10" y="10" width="301" height="62"/>
+                                <string key="text">Hlo. I just check your profile. I can do 
+this task. Can I share you idea about this 
+project.</string>
+                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82352941180000006" green="0.89411764709999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HJ0-nD-n9b" secondAttribute="bottom" constant="10" id="0Pw-3h-pDJ"/>
+                            <constraint firstItem="HJ0-nD-n9b" firstAttribute="leading" secondItem="nt2-am-iPj" secondAttribute="leading" constant="10" id="Dvl-KQ-9fi"/>
+                            <constraint firstItem="HJ0-nD-n9b" firstAttribute="top" secondItem="nt2-am-iPj" secondAttribute="top" constant="10" id="EXe-DS-abx"/>
+                            <constraint firstAttribute="trailing" secondItem="HJ0-nD-n9b" secondAttribute="trailing" constant="10" id="rtz-i1-VlP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nt2-am-iPj" secondAttribute="trailing" constant="30" id="0d0-00-n4m"/>
+                    <constraint firstItem="zi0-ge-ei8" firstAttribute="leading" secondItem="y1j-T7-iIr" secondAttribute="leading" constant="20" id="MCa-uP-fpZ"/>
+                    <constraint firstItem="byj-lS-BGT" firstAttribute="top" secondItem="nt2-am-iPj" secondAttribute="bottom" constant="5" id="VL9-xF-nuK"/>
+                    <constraint firstItem="byj-lS-BGT" firstAttribute="leading" secondItem="nt2-am-iPj" secondAttribute="leading" id="Wmc-W6-Wla"/>
+                    <constraint firstItem="nt2-am-iPj" firstAttribute="top" secondItem="y1j-T7-iIr" secondAttribute="top" constant="5" id="Xoj-Ce-EUH"/>
+                    <constraint firstItem="zi0-ge-ei8" firstAttribute="top" secondItem="y1j-T7-iIr" secondAttribute="top" constant="5" id="cwU-iq-yqS"/>
+                    <constraint firstItem="nt2-am-iPj" firstAttribute="leading" secondItem="zi0-ge-ei8" secondAttribute="trailing" constant="8" id="eRp-rr-VIU"/>
+                    <constraint firstAttribute="bottom" secondItem="byj-lS-BGT" secondAttribute="bottom" constant="7" id="muL-Za-aKZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="right_lbl" destination="HJ0-nD-n9b" id="fUc-MV-KTU"/>
+                <outlet property="time_lbl" destination="byj-lS-BGT" id="pPX-f2-sBN"/>
+            </connections>
+            <point key="canvasLocation" x="250.72463768115944" y="-216.62946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="janko-ferlic-G-jo31ESuRE-unsplash" width="4912" height="7360"/>
+    </resources>
+</document>

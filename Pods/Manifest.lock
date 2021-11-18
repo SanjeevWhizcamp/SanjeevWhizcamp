@@ -1,0 +1,62 @@
+PODS:
+  - CarbonKit (2.3.1)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - FittedSheets (2.4.2)
+  - GrowingTextView (0.7.2)
+  - IQKeyboardManagerSwift (6.5.6)
+  - MercariQRScanner (1.9.0)
+  - OnlyPictures (1.1.2)
+  - OTPFieldView (1.0.1)
+  - ReadMoreTextView (3.0.1)
+  - SideMenu (6.5.0)
+  - SkyFloatingLabelTextField (4.0.0)
+  - VegaScrollFlowLayoutX (1.5)
+
+DEPENDENCIES:
+  - CarbonKit
+  - Charts
+  - FittedSheets
+  - GrowingTextView
+  - IQKeyboardManagerSwift
+  - MercariQRScanner
+  - OnlyPictures
+  - OTPFieldView
+  - ReadMoreTextView
+  - SideMenu
+  - SkyFloatingLabelTextField
+  - VegaScrollFlowLayoutX
+
+SPEC REPOS:
+  trunk:
+    - CarbonKit
+    - Charts
+    - FittedSheets
+    - GrowingTextView
+    - IQKeyboardManagerSwift
+    - MercariQRScanner
+    - OnlyPictures
+    - OTPFieldView
+    - ReadMoreTextView
+    - SideMenu
+    - SkyFloatingLabelTextField
+    - VegaScrollFlowLayoutX
+
+SPEC CHECKSUMS:
+  CarbonKit: b60e24dbdb47179990d5e074efa87ab819c8de98
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  FittedSheets: 661408776eb4ff514a31da75b3600bd7222b2b3d
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  MercariQRScanner: e5aea873969af59b09b4cc411fc1c5b6293dba44
+  OnlyPictures: c819b67e20f45493d49f38f4de5e630b7e8cbae0
+  OTPFieldView: 700a752fe62c41d1c4914c78aa500fb30d97c255
+  ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
+  VegaScrollFlowLayoutX: 3095c18c779c44def07a9a3054c9e2f73d52427e
+
+PODFILE CHECKSUM: 614d0bce4e4303062f36368e8ffbb90c120a584d
+
+COCOAPODS: 1.10.1

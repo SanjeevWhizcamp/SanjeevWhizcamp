@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli.ttf">
+            <string>Muli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="61" id="vRq-Qy-qr1" customClass="PeopleCell" customModule="SocialHunter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vRq-Qy-qr1" id="eE5-Vn-aFS">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4Z-ip-9Po">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ali-morshedlou-WMD64tMfc4k-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="3P8-WT-B69">
+                                <rect key="frame" x="20" y="5.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9nD-pP-7YF"/>
+                                    <constraint firstAttribute="width" constant="50" id="SlU-NR-wyn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor Roe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eb-VM-gcg">
+                                <rect key="frame" x="80" y="10" width="78.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUK-df-PaZ">
+                                <rect key="frame" x="80" y="34.5" width="46.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="12"/>
+                                <color key="textColor" name="CDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3P8-WT-B69" firstAttribute="leading" secondItem="I4Z-ip-9Po" secondAttribute="leading" constant="20" id="A4i-cQ-1Ud"/>
+                            <constraint firstItem="3P8-WT-B69" firstAttribute="centerY" secondItem="I4Z-ip-9Po" secondAttribute="centerY" id="Blg-nl-xan"/>
+                            <constraint firstAttribute="bottom" secondItem="CUK-df-PaZ" secondAttribute="bottom" constant="8.5" id="DzJ-Qh-Odp"/>
+                            <constraint firstItem="CUK-df-PaZ" firstAttribute="leading" secondItem="3P8-WT-B69" secondAttribute="trailing" constant="10" id="IkU-ZG-8jr"/>
+                            <constraint firstItem="7Eb-VM-gcg" firstAttribute="leading" secondItem="3P8-WT-B69" secondAttribute="trailing" constant="10" id="Spd-Gt-YlN"/>
+                            <constraint firstItem="CUK-df-PaZ" firstAttribute="top" secondItem="7Eb-VM-gcg" secondAttribute="bottom" constant="2" id="qRJ-dv-8gM"/>
+                            <constraint firstItem="7Eb-VM-gcg" firstAttribute="top" secondItem="I4Z-ip-9Po" secondAttribute="top" constant="10" id="tqA-vQ-h8U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I4Z-ip-9Po" firstAttribute="top" secondItem="eE5-Vn-aFS" secondAttribute="top" id="BFY-sX-2Q4"/>
+                    <constraint firstItem="I4Z-ip-9Po" firstAttribute="leading" secondItem="eE5-Vn-aFS" secondAttribute="leading" id="ajw-q5-esO"/>
+                    <constraint firstAttribute="trailing" secondItem="I4Z-ip-9Po" secondAttribute="trailing" id="hJK-a1-JC7"/>
+                    <constraint firstAttribute="bottom" secondItem="I4Z-ip-9Po" secondAttribute="bottom" id="qMU-eK-JQO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgvw" destination="3P8-WT-B69" id="bgr-JW-faL"/>
+                <outlet property="name_lbl" destination="7Eb-VM-gcg" id="h8o-i7-ZYk"/>
+                <outlet property="role_lbl" destination="CUK-df-PaZ" id="DU1-C7-dcP"/>
+            </connections>
+            <point key="canvasLocation" x="242.0289855072464" y="83.370535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ali-morshedlou-WMD64tMfc4k-unsplash" width="4000" height="6000"/>
+        <namedColor name="CDarkGray">
+            <color red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-SemiBold.ttf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnlineUserCVC" customModule="SocialHunter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SK4-yF-83R">
+                        <rect key="frame" x="0.0" y="0.0" width="262" height="167"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G16-1a-iT6">
+                                <rect key="frame" x="101" y="15" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G16-1a-iT6" secondAttribute="height" multiplier="1:1" id="b22-J4-5Wk"/>
+                                    <constraint firstAttribute="width" constant="60" id="ifc-Cg-2Az"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanna Roe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEp-SL-oJa">
+                                <rect key="frame" x="101" y="80" width="60" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tEp-SL-oJa" firstAttribute="top" secondItem="G16-1a-iT6" secondAttribute="bottom" constant="5" id="5HO-Jg-lv9"/>
+                            <constraint firstItem="tEp-SL-oJa" firstAttribute="trailing" secondItem="G16-1a-iT6" secondAttribute="trailing" id="9zT-i1-WvZ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tEp-SL-oJa" secondAttribute="bottom" constant="10" id="ZIZ-7d-8oI"/>
+                            <constraint firstItem="tEp-SL-oJa" firstAttribute="leading" secondItem="G16-1a-iT6" secondAttribute="leading" id="bq9-Y8-YjS"/>
+                            <constraint firstItem="G16-1a-iT6" firstAttribute="centerX" secondItem="SK4-yF-83R" secondAttribute="centerX" id="ikr-Go-Yk0"/>
+                            <constraint firstItem="G16-1a-iT6" firstAttribute="top" secondItem="SK4-yF-83R" secondAttribute="top" constant="15" id="lGu-uP-ll0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SK4-yF-83R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NLs-ZM-PiL"/>
+                <constraint firstAttribute="trailing" secondItem="SK4-yF-83R" secondAttribute="trailing" id="O8J-NV-lXY"/>
+                <constraint firstItem="SK4-yF-83R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iKF-JP-yIH"/>
+                <constraint firstAttribute="bottom" secondItem="SK4-yF-83R" secondAttribute="bottom" id="yfg-f4-LAH"/>
+            </constraints>
+            <size key="customSize" width="262" height="167"/>
+            <point key="canvasLocation" x="188.40579710144928" y="157.03125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

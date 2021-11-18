@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-SemiBold.ttf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HeaderTVC" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderTVC" rowHeight="50" id="KGk-i7-Jjw" customClass="HeaderTVC" customModule="SocialHunter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLF-L4-nbK">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVZ-mH-6pl">
+                                <rect key="frame" x="20" y="5" width="44.5" height="40"/>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bon-Ir-O35">
+                                <rect key="frame" x="296" y="16.5" width="37" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="15"/>
+                                <color key="textColor" name="CButtonDarkBlueBG"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YVZ-mH-6pl" firstAttribute="centerY" secondItem="HLF-L4-nbK" secondAttribute="centerY" id="1G2-PE-ZGP"/>
+                            <constraint firstAttribute="bottom" secondItem="YVZ-mH-6pl" secondAttribute="bottom" constant="5" id="6Tx-pM-ZMn"/>
+                            <constraint firstItem="bon-Ir-O35" firstAttribute="centerY" secondItem="YVZ-mH-6pl" secondAttribute="centerY" id="JWx-Jk-K6V"/>
+                            <constraint firstItem="YVZ-mH-6pl" firstAttribute="top" secondItem="HLF-L4-nbK" secondAttribute="top" constant="5" id="LlG-5y-PzO"/>
+                            <constraint firstItem="YVZ-mH-6pl" firstAttribute="leading" secondItem="HLF-L4-nbK" secondAttribute="leading" constant="20" id="Ocb-ao-mNB"/>
+                            <constraint firstAttribute="trailing" secondItem="bon-Ir-O35" secondAttribute="trailing" constant="20" id="kmq-G5-7ZT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HLF-L4-nbK" secondAttribute="trailing" id="DEq-XZ-0jE"/>
+                    <constraint firstItem="HLF-L4-nbK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XiX-Yo-4Zj"/>
+                    <constraint firstItem="HLF-L4-nbK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aKQ-wp-DYG"/>
+                    <constraint firstAttribute="bottom" secondItem="HLF-L4-nbK" secondAttribute="bottom" id="r6J-1e-idd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftSide_lbl" destination="YVZ-mH-6pl" id="RH2-5R-KhP"/>
+                <outlet property="rightSide_lbl" destination="bon-Ir-O35" id="YUJ-bt-xAF"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CButtonDarkBlueBG">
+            <color red="0.1803921568627451" green="0.50196078431372548" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

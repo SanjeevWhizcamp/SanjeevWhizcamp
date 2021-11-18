@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-SemiBold.ttf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmailAddPopup" customModule="SocialHunter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ow3-LL-naj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYm-SG-lm2">
+                            <rect key="frame" x="30" y="323" width="354" height="250"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done" translatesAutoresizingMaskIntoConstraints="NO" id="vFJ-Y9-HfC">
+                                    <rect key="frame" x="147" y="75" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="hxy-ze-MWh"/>
+                                        <constraint firstAttribute="width" constant="60" id="sdT-X9-qnH"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Email added in your profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-8D-KlE">
+                                    <rect key="frame" x="10" y="145" width="334" height="71"/>
+                                    <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ask-xU-QvV">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="250"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="QhD-8D-KlE" firstAttribute="centerX" secondItem="cYm-SG-lm2" secondAttribute="centerX" id="2yY-vS-sYd"/>
+                                <constraint firstItem="ask-xU-QvV" firstAttribute="leading" secondItem="cYm-SG-lm2" secondAttribute="leading" id="6hv-12-Ju9"/>
+                                <constraint firstItem="vFJ-Y9-HfC" firstAttribute="centerX" secondItem="cYm-SG-lm2" secondAttribute="centerX" id="GCh-Eg-GY2"/>
+                                <constraint firstAttribute="bottom" secondItem="ask-xU-QvV" secondAttribute="bottom" id="GN9-fZ-hAo"/>
+                                <constraint firstItem="QhD-8D-KlE" firstAttribute="top" secondItem="vFJ-Y9-HfC" secondAttribute="bottom" constant="10" id="KjX-0p-xak"/>
+                                <constraint firstAttribute="trailing" secondItem="QhD-8D-KlE" secondAttribute="trailing" constant="10" id="LJ5-F0-dAp"/>
+                                <constraint firstItem="QhD-8D-KlE" firstAttribute="leading" secondItem="cYm-SG-lm2" secondAttribute="leading" constant="10" id="Q8Z-yK-lJf"/>
+                                <constraint firstItem="ask-xU-QvV" firstAttribute="top" secondItem="cYm-SG-lm2" secondAttribute="top" id="g2X-9g-pjf"/>
+                                <constraint firstAttribute="height" constant="250" id="qB4-ag-GJQ"/>
+                                <constraint firstItem="vFJ-Y9-HfC" firstAttribute="centerY" secondItem="cYm-SG-lm2" secondAttribute="centerY" constant="-20" id="t0A-OB-80q"/>
+                                <constraint firstAttribute="trailing" secondItem="ask-xU-QvV" secondAttribute="trailing" id="uct-e3-cnd"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cYm-SG-lm2" secondAttribute="trailing" constant="30" id="86a-ol-j8P"/>
+                        <constraint firstItem="cYm-SG-lm2" firstAttribute="centerY" secondItem="ow3-LL-naj" secondAttribute="centerY" id="Vo8-MJ-Hih"/>
+                        <constraint firstItem="cYm-SG-lm2" firstAttribute="leading" secondItem="ow3-LL-naj" secondAttribute="leading" constant="30" id="gZZ-UN-5aJ"/>
+                        <constraint firstItem="cYm-SG-lm2" firstAttribute="centerX" secondItem="ow3-LL-naj" secondAttribute="centerX" id="pqx-Vc-8tc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ow3-LL-naj" secondAttribute="bottom" id="Ycz-Pb-fw1"/>
+                <constraint firstItem="ow3-LL-naj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gB9-5L-n4e"/>
+                <constraint firstItem="ow3-LL-naj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="q6i-UG-tke"/>
+                <constraint firstItem="ow3-LL-naj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ybk-Gr-6cX"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="ow3-LL-naj" id="OIR-Ik-lM6"/>
+                <outlet property="hideView" destination="ask-xU-QvV" id="qqP-Va-4cW"/>
+                <outlet property="lbl" destination="QhD-8D-KlE" id="3qY-7X-S04"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Done" width="65" height="65"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

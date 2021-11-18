@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli.ttf">
+            <string>Muli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GYk-i0-XZh" customClass="InterestTagCell" customModule="SocialHunter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ROb-Ba-zLr">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gq-sJ-dlv">
+                        <rect key="frame" x="0.0" y="0.0" width="157" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgK-f6-YDY">
+                                <rect key="frame" x="10" y="0.0" width="110" height="50"/>
+                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ye-je-jTR">
+                                <rect key="frame" x="125" y="14" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="6R0-Ve-ijK"/>
+                                    <constraint firstAttribute="height" constant="22" id="zif-IK-sjh"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="CrossButton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SgK-f6-YDY" secondAttribute="bottom" id="0O0-qH-O1h"/>
+                            <constraint firstItem="SgK-f6-YDY" firstAttribute="top" secondItem="1Gq-sJ-dlv" secondAttribute="top" id="Rhx-79-bY8"/>
+                            <constraint firstItem="5Ye-je-jTR" firstAttribute="leading" secondItem="SgK-f6-YDY" secondAttribute="trailing" constant="5" id="dCo-G9-gby"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ye-je-jTR" secondAttribute="trailing" constant="10" id="qLw-ym-kS0"/>
+                            <constraint firstItem="SgK-f6-YDY" firstAttribute="leading" secondItem="1Gq-sJ-dlv" secondAttribute="leading" constant="10" id="qou-oI-esm"/>
+                            <constraint firstItem="5Ye-je-jTR" firstAttribute="centerY" secondItem="1Gq-sJ-dlv" secondAttribute="centerY" id="sZJ-Bo-O7j"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Gq-sJ-dlv" firstAttribute="leading" secondItem="ROb-Ba-zLr" secondAttribute="leading" id="Vbb-cF-WlU"/>
+                    <constraint firstAttribute="bottom" secondItem="1Gq-sJ-dlv" secondAttribute="bottom" id="kwy-2h-0AZ"/>
+                    <constraint firstItem="1Gq-sJ-dlv" firstAttribute="top" secondItem="ROb-Ba-zLr" secondAttribute="top" id="vLg-Vl-qEh"/>
+                    <constraint firstAttribute="trailing" secondItem="1Gq-sJ-dlv" secondAttribute="trailing" id="xqh-a9-cTC"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="157" height="50"/>
+            <connections>
+                <outlet property="backView" destination="1Gq-sJ-dlv" id="snX-Aq-xzc"/>
+                <outlet property="cross_btn" destination="5Ye-je-jTR" id="B7m-BT-ELr"/>
+                <outlet property="lbl" destination="SgK-f6-YDY" id="czR-bA-hnV"/>
+            </connections>
+            <point key="canvasLocation" x="231.15942028985509" y="98.4375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CrossButton" width="28" height="28"/>
+    </resources>
+</document>
